@@ -25,6 +25,9 @@ function NavBar() {
           <li>
             <Link to="train"><button className="nav-button">Training Help</button></Link>
           </li>
+          <li>
+            <Link to="fitness"><button className="nav-button">Fitness Plan</button></Link>
+          </li>
         </ul>
       </nav>
     );
