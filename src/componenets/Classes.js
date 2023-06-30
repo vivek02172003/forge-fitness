@@ -5,7 +5,7 @@ import cardio from './Images/cardio.jpg';
 import strength from './Images/strength.jpg';
 import cycling from './Images/cycling.jpg';
 import dance from './Images/dance.jpg';
-
+import GoogleFormButton from './GoogleFormButton';
 function Classes() {
     return (
         <div className="classes-page">
@@ -47,6 +47,7 @@ function Classes() {
           </div>
         </div>
         </div>
+        <GoogleFormButton />
         </div>
       );
 }

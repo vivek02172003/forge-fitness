@@ -11,6 +11,7 @@ import vegetarian from './Images/vegetarian.png';
 import Whole from './Images/Whole30.jpg';
 import Mediterranean from './Images/Mediterranean.jpg';
 import './Nutrition.css';  
+import GoogleFormButton from './GoogleFormButton';
 const NutritionPage = () => {
     const dietPlans = [
         {
@@ -121,6 +122,7 @@ const NutritionPage = () => {
           </div>
         </div>
       </div>
+      <GoogleFormButton />
     </div>
   );
   

@@ -5,7 +5,7 @@ import cardio from './Images/cardio.jpg';
 import strength from './Images/strength.jpg';
 import cycling from './Images/cycling.jpg';
 import dance from './Images/dance.jpg';
-
+import GoogleFormButton from './GoogleFormButton';
 function Membership() {
     const basicDescription=["Full access to the gym facilities","Cardio machines and strength training equipment", "Group fitness classes (limited availability)", "Locker rooms and showers", "Personalized fitness assessment","Access to group fitness classes (limited availability)","Wi-Fi access throughout the facility"];
     const premium = ["Includes all Basic Membership amenities", "Priority access to group fitness classes", "Access to specialized training equipment and areas", "Additional fitness amenities such as sauna or steam room", "Complimentary towel service", "Discounted rates on personal training sessions"]
@@ -42,6 +42,7 @@ function Membership() {
           </div>
         </div>
         </div>
+        <GoogleFormButton />
         </div>
       );
 }

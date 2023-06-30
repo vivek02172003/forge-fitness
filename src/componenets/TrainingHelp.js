@@ -99,213 +99,225 @@ const TrainingPage = () => {
               Training Splits
             </div>
             <div className="card-content">
-            <ul style={{ listStyleType: 'none', paddingLeft: '0', marginTop: '1em' }}>
-  <li>
-    <strong>Bulking:</strong>
-    <ul style={{ listStyleType: 'none', paddingLeft: '1em', marginTop: '0.5em' }}>
-      <li>Chest:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Dumbbell Press - 4 sets of 12 reps</li>
-          <li>Incline Bench Press - 4 sets of 12 reps</li>
-          <li>Cable Flyes - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Shoulders:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Shoulder Press - 4 sets of 12 reps</li>
-          <li>Arnold Press - 4 sets of 12 reps</li>
-          <li>Lateral Raises - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Biceps:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Barbell Curls - 4 sets of 12 reps</li>
-          <li>Hammer Curls - 4 sets of 12 reps</li>
-          <li>Preacher Curls - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Triceps:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Tricep Dips - 4 sets of 12 reps</li>
-          <li>Skull Crushers - 4 sets of 12 reps</li>
-          <li>Cable Pushdowns - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Quads:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Squats - 4 sets of 12 reps</li>
-          <li>Leg Press - 4 sets of 12 reps</li>
-          <li>Lunges - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Calves:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Standing Calf Raises - 4 sets of 12 reps</li>
-          <li>Seated Calf Raises - 4 sets of 12 reps</li>
-          <li>Donkey Calf Raises - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Hamstrings:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Deadlifts - 4 sets of 12 reps</li>
-          <li>Hamstring Curls - 4 sets of 12 reps</li>
-          <li>Good Mornings - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Back:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Deadlifts - 4 sets of 12 reps</li>
-          <li>Pull-ups - 4 sets of 12 reps</li>
-          <li>Barbell Rows - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Abs:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Crunches - 4 sets of 12 reps</li>
-          <li>Plank - 4 sets of 30 seconds</li>
-          <li>Russian Twists - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <strong>Cutting:</strong>
-    <ul style={{ listStyleType: 'none', paddingLeft: '1em', marginTop: '0.5em' }}>
-      <li>Chest:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Push-ups - 4 sets of 10 reps</li>
-          <li>Dumbbell Pullover - 4 sets of 12 reps</li>
-          <li>Cable Crossovers - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Shoulders:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Front Raises - 4 sets of 12 reps</li>
-          <li>Bent-Over Reverse Flyes - 4 sets of 12 reps</li>
-          <li>Face Pulls - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Biceps:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Hammer Curls - 4 sets of 12 reps</li>
-          <li>Concentration Curls - 4 sets of 12 reps</li>
-          <li>Spider Curls - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Triceps:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Diamond Push-ups - 4 sets of 10 reps</li>
-          <li>Tricep Kickbacks - 4 sets of 12 reps</li>
-          <li>Overhead Tricep Extension - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Quads:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Bodyweight Squats - 4 sets of 12 reps</li>
-          <li>Lunges - 4 sets of 12 reps</li>
-          <li>Step-ups - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Calves:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Standing Calf Raises - 4 sets of 12 reps</li>
-          <li>Seated Calf Raises - 4 sets of 12 reps</li>
-          <li>Donkey Calf Raises - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Hamstrings:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Romanian Deadlifts - 4 sets of 12 reps</li>
-          <li>Hamstring Curls - 4 sets of 12 reps</li>
-          <li>Glute-Ham Raises - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Back:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Lat Pulldowns - 4 sets of 12 reps</li>
-          <li>Single-Arm Dumbbell Rows - 4 sets of 12 reps</li>
-          <li>T-Bar Rows - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Abs:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Mountain Climbers - 4 sets of 12 reps</li>
-          <li>Reverse Crunches - 4 sets of 12 reps</li>
-          <li>Hanging Leg Raises - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <strong>Maintenance:</strong>
-    <ul style={{ listStyleType: 'none', paddingLeft: '1em', marginTop: '0.5em' }}>
-      <li>Chest:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Bench Press - 4 sets of 8 reps</li>
-          <li>Dumbbell Flyes - 4 sets of 10 reps</li>
-          <li>Push-ups - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Shoulders:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Military Press - 4 sets of 8 reps</li>
-          <li>Upright Rows - 4 sets of 10 reps</li>
-          <li>Front Raises - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Biceps:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Barbell Curls - 4 sets of 8 reps</li>
-          <li>Dumbbell Hammer Curls - 4 sets of 10 reps</li>
-          <li>Preacher Curls - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Triceps:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Dips - 4 sets of 8 reps</li>
-          <li>Close Grip Bench Press - 4 sets of 10 reps</li>
-          <li>Tricep Pushdowns - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Quads:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Barbell Squats - 4 sets of 8 reps</li>
-          <li>Leg Press - 4 sets of 10 reps</li>
-          <li>Hack Squats - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Calves:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Standing Calf Raises - 4 sets of 8 reps</li>
-          <li>Seated Calf Raises - 4 sets of 10 reps</li>
-          <li>Donkey Calf Raises - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Hamstrings:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Romanian Deadlifts - 4 sets of 8 reps</li>
-          <li>Leg Curls - 4 sets of 10 reps</li>
-          <li>Glute-Ham Raises - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Back:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Deadlifts - 4 sets of 8 reps</li>
-          <li>Wide Grip Pull-ups - 4 sets of 10 reps</li>
-          <li>Seated Cable Rows - 4 sets of 12 reps</li>
-        </ul>
-      </li>
-      <li>Abs:
-        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
-          <li>Weighted Sit-ups - 4 sets of 8 reps</li>
-          <li>Russian Twists - 4 sets of 10 reps</li>
-          <li>Plank - 4 sets of 30 seconds</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+            <div style={{ height: '600px', overflow: 'auto' }}>
+                <ul style={{ listStyleType: 'none', paddingLeft: '0', marginTop: '1em' }}>
+                <li>
+                    <strong>Bulking:</strong>
+                    <ul style={{ listStyleType: 'none', paddingLeft: '1em', marginTop: '0.5em' }}>
+                        <li>Chest:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Dumbbell Press - 4 sets of 12 reps</li>
+                            <li>Incline Bench Press - 4 sets of 12 reps</li>
+                            <li>Cable Flyes - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Shoulders:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Shoulder Press - 4 sets of 12 reps</li>
+                            <li>Arnold Press - 4 sets of 12 reps</li>
+                            <li>Lateral Raises - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Biceps:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Barbell Curls - 4 sets of 12 reps</li>
+                            <li>Hammer Curls - 4 sets of 12 reps</li>
+                            <li>Preacher Curls - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Triceps:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Tricep Dips - 4 sets of 12 reps</li>
+                            <li>Skull Crushers - 4 sets of 12 reps</li>
+                            <li>Cable Pushdowns - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Quads:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Squats - 4 sets of 12 reps</li>
+                            <li>Leg Press - 4 sets of 12 reps</li>
+                            <li>Lunges - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Calves:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Standing Calf Raises - 4 sets of 12 reps</li>
+                            <li>Seated Calf Raises - 4 sets of 12 reps</li>
+                            <li>Donkey Calf Raises - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Hamstrings:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Deadlifts - 4 sets of 12 reps</li>
+                            <li>Hamstring Curls - 4 sets of 12 reps</li>
+                            <li>Good Mornings - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Back:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Deadlifts - 4 sets of 12 reps</li>
+                            <li>Pull-ups - 4 sets of 12 reps</li>
+                            <li>Barbell Rows - 4 sets of 12 reps</li>
+                        </ul>
+                    </ul>
+                </li>
 
+                <li>
+                    <strong>Cutting:</strong>
+                    <ul style={{ listStyleType: 'none', paddingLeft: '1em', marginTop: '0.5em' }}>
+                        <li>Chest:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Incline Dumbbell Press - 4 sets of 12 reps</li>
+                            <li>Decline Bench Press - 4 sets of 12 reps</li>
+                            <li>Cable Crossovers - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Shoulders:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Seated Dumbbell Press - 4 sets of 12 reps</li>
+                            <li>Front Raises - 4 sets of 12 reps</li>
+                            <li>Bent Over Flyes - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Biceps:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Hammer Curls - 4 sets of 12 reps</li>
+                            <li>Concentration Curls - 4 sets of 12 reps</li>
+                            <li>Spider Curls - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Triceps:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Diamond Push-ups - 4 sets of 12 reps</li>
+                            <li>Tricep Kickbacks - 4 sets of 12 reps</li>
+                            <li>Overhead Tricep Extensions - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Quads:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Leg Press - 4 sets of 12 reps</li>
+                            <li>Walking Lunges - 4 sets of 12 reps</li>
+                            <li>Step-ups - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Calves:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Seated Calf Raises - 4 sets of 12 reps</li>
+                            <li>Donkey Calf Raises - 4 sets of 12 reps</li>
+                            <li>Jump Rope - 4 sets of 30 seconds</li>
+                        </ul>
+                        <li>Hamstrings:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Romanian Deadlifts - 4 sets of 12 reps</li>
+                            <li>Leg Curls - 4 sets of 12 reps</li>
+                            <li>Glute Bridges - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Back:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Lat Pulldowns - 4 sets of 12 reps</li>
+                            <li>Seated Cable Rows - 4 sets of 12 reps</li>
+                            <li>Hyperextensions - 4 sets of 12 reps</li>
+                        </ul>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Bulking:</strong>
+                    <ul style={{ listStyleType: 'none', paddingLeft: '1em', marginTop: '0.5em' }}>
+                        <li>Chest:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Dumbbell Press - 4 sets of 12 reps</li>
+                            <li>Incline Bench Press - 4 sets of 12 reps</li>
+                            <li>Cable Flyes - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Shoulders:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Shoulder Press - 4 sets of 12 reps</li>
+                            <li>Arnold Press - 4 sets of 12 reps</li>
+                            <li>Lateral Raises - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Biceps:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Barbell Curls - 4 sets of 12 reps</li>
+                            <li>Hammer Curls - 4 sets of 12 reps</li>
+                            <li>Preacher Curls - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Triceps:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Tricep Dips - 4 sets of 12 reps</li>
+                            <li>Skull Crushers - 4 sets of 12 reps</li>
+                            <li>Cable Pushdowns - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Quads:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Squats - 4 sets of 12 reps</li>
+                            <li>Leg Press - 4 sets of 12 reps</li>
+                            <li>Lunges - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Calves:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Standing Calf Raises - 4 sets of 12 reps</li>
+                            <li>Seated Calf Raises - 4 sets of 12 reps</li>
+                            <li>Donkey Calf Raises - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Hamstrings:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Deadlifts - 4 sets of 12 reps</li>
+                            <li>Hamstring Curls - 4 sets of 12 reps</li>
+                            <li>Good Mornings - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Back:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Deadlifts - 4 sets of 12 reps</li>
+                            <li>Pull-ups - 4 sets of 12 reps</li>
+                            <li>Barbell Rows - 4 sets of 12 reps</li>
+                        </ul>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Cutting:</strong>
+                    <ul style={{ listStyleType: 'none', paddingLeft: '1em', marginTop: '0.5em' }}>
+                        <li>Chest:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Incline Dumbbell Press - 4 sets of 12 reps</li>
+                            <li>Decline Bench Press - 4 sets of 12 reps</li>
+                            <li>Cable Crossovers - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Shoulders:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Seated Dumbbell Press - 4 sets of 12 reps</li>
+                            <li>Front Raises - 4 sets of 12 reps</li>
+                            <li>Bent Over Flyes - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Biceps:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Hammer Curls - 4 sets of 12 reps</li>
+                            <li>Concentration Curls - 4 sets of 12 reps</li>
+                            <li>Spider Curls - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Triceps:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Diamond Push-ups - 4 sets of 12 reps</li>
+                            <li>Tricep Kickbacks - 4 sets of 12 reps</li>
+                            <li>Overhead Tricep Extensions - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Quads:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Leg Press - 4 sets of 12 reps</li>
+                            <li>Walking Lunges - 4 sets of 12 reps</li>
+                            <li>Step-ups - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Calves:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Seated Calf Raises - 4 sets of 12 reps</li>
+                            <li>Donkey Calf Raises - 4 sets of 12 reps</li>
+                            <li>Jump Rope - 4 sets of 30 seconds</li>
+                        </ul>
+                        <li>Hamstrings:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Romanian Deadlifts - 4 sets of 12 reps</li>
+                            <li>Leg Curls - 4 sets of 12 reps</li>
+                            <li>Glute Bridges - 4 sets of 12 reps</li>
+                        </ul>
+                        <li>Back:</li>
+                        <ul style={{ listStyleType: 'none', marginTop: '0.5em' }}>
+                            <li>Lat Pulldowns - 4 sets of 12 reps</li>
+                            <li>Seated Cable Rows - 4 sets of 12 reps</li>
+                            <li>Hyperextensions - 4 sets of 12 reps</li>
+                        </ul>
+                    </ul>
+                </li>
+
+                    </ul>
+                </div>
 
             </div>
           </div>

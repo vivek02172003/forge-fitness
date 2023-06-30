@@ -1,6 +1,6 @@
 import React from 'react';
 import FitnessCalendar from './calendar'
-
+import GoogleFormButton from './GoogleFormButton';
 
 const FitnessPlannerPage = () => {
   const [workoutSchedule, setWorkoutSchedule] = React.useState([]);

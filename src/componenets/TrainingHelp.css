@@ -25,7 +25,7 @@
   background:#e66465;
   color: white;
   width: 350px; /* Set the desired width */
-  height: 2600px; /* Set the desired height */
+  height:fit-content; /* Set the desired height */
 }
 .card-image::before {
   content: '';
