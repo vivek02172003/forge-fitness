@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/the-fitness-forge/static/css/main.3fcd4dd4.css",
+    "main.css": "/the-fitness-forge/static/css/main.bd9a0ba0.css",
     "main.js": "/the-fitness-forge/static/js/main.3d335172.js",
     "static/js/787.5c7235f6.chunk.js": "/the-fitness-forge/static/js/787.5c7235f6.chunk.js",
     "static/media/backround.jpg": "/the-fitness-forge/static/media/backround.6ad214f366340c36aed7.jpg",
@@ -20,12 +20,12 @@
     "static/media/cycling.jpg": "/the-fitness-forge/static/media/cycling.3ea2e4d58caed54c0438.jpg",
     "static/media/strength.jpg": "/the-fitness-forge/static/media/strength.7f779b87a86d8e92f2c8.jpg",
     "index.html": "/the-fitness-forge/index.html",
-    "main.3fcd4dd4.css.map": "/the-fitness-forge/static/css/main.3fcd4dd4.css.map",
+    "main.bd9a0ba0.css.map": "/the-fitness-forge/static/css/main.bd9a0ba0.css.map",
     "main.3d335172.js.map": "/the-fitness-forge/static/js/main.3d335172.js.map",
     "787.5c7235f6.chunk.js.map": "/the-fitness-forge/static/js/787.5c7235f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fcd4dd4.css",
+    "static/css/main.bd9a0ba0.css",
     "static/js/main.3d335172.js"
   ]
 }
