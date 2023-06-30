@@ -1,0 +1,90 @@
+.filtered-videos {
+  flex: 0 0 60%;
+}
+.card4 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background: linear-gradient(#ffffff, #e66465);
+  color: white;
+  width: 250px; /* Set the desired width */
+  height: 300px; /* Set the desired height */
+}
+.card5 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background:#e66465;
+  color: white;
+  width: 350px; /* Set the desired width */
+  height: 2600px; /* Set the desired height */
+}
+.card-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 1; /* Ensure the overlay is positioned above the image */
+  border-radius: 5px;
+}
+.card-image {
+  object-fit:fill;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Ensure the overlay is positioned above the image */
+  opacity: 0.8; /* Initially hide the overlay */
+  transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.card-image:hover::before {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.card4 h3 {
+  margin: 10px 0;
+}
+
+.card4 p {
+  margin-bottom: 5%;
+
+}
+
+.filtered-videos{
+  margin-right: 2%;
+  margin-left: 4%;
+}
+
+.card5-title {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #c14c4c;
+  width: 100%;
+  border-radius: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.search-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  background-color: #c14c4c;
+  width: 100%;
+  border-radius: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2%;
+}

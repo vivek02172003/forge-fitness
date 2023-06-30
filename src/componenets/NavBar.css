@@ -1,0 +1,55 @@
+nav {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#ffffff, #e66465);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the shadow properties as needed */
+
+  }
+  
+  .logo {
+    margin-right: 0.5rem; /* Adjust the margin as needed */
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .logo-image {
+    height: 80px; /* Adjust the height of the logo image */
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    
+  }
+  
+  .nav-links li {
+    margin-right: 0.5rem; /* Adjust the margin as needed */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .nav-button {
+  background-color: #c14c4c;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: white;
+  width: 120px; /* Adjust the width of the button */
+  height: 40px; /* Adjust the height of the button */
+  border-radius: 5px
+  
+}
+
+.nav-button:hover {
+  background-color: #201010;
+}

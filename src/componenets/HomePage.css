@@ -1,0 +1,47 @@
+
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Images/backround.jpg');
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 0%;
+  }
+  
+  .site-title {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding-top: 10%;
+  }
+  
+  .get-started-button {
+    background-color: #c14c4c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: white;
+    font-size: xx-large;
+    width: 420px; /* Adjust the width of the button */
+    height: 100px; /* Adjust the height of the button */
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  .get-started-button:hover {
+    background-color: #000000;
+  }
+  

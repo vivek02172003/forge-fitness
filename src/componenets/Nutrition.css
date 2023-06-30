@@ -1,0 +1,104 @@
+.nutrition-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .search-container {
+    flex: 0 0 20%;
+  }
+  
+  .search-container h2 {
+    margin-top: 0;
+  }
+  
+  .search-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filtered-plans {
+    flex: 0 0 80%;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5%;
+  }
+  
+  .card3 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card3 h3 {
+    margin: 10px 0;
+  }
+  
+  .card3 p {
+    margin: 0;
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Images/backround.jpg');
+    background-size: cover;
+    z-index: -1;
+  }  
+  .nutrition-title {
+    color: #030000;
+    font-size: 3rem;
+    padding-top: 1.5%;
+    margin-top: 0;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .nutrition-button {
+    background-color: #c14c4c;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    font-size:medium;
+  }
+
+  .nutrition-button:hover {
+    background-color: #201010;
+  }
+
+  .search-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    background-color: #c14c4c;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 25%;
+  }
