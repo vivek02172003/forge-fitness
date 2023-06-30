@@ -1,6 +1,7 @@
 {
   "name": "the-fitness-forge",
   "version": "0.1.0",
+  "homepage": "http://vivek02172003.github.io/the-fitness-forge",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
