@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5c743eac.css",
+    "main.js": "/static/js/main.15895a9b.js",
+    "static/js/787.5c7235f6.chunk.js": "/static/js/787.5c7235f6.chunk.js",
+    "static/media/backround.jpg": "/static/media/backround.6ad214f366340c36aed7.jpg",
+    "static/media/musclemaximizer.jpg": "/static/media/musclemaximizer.8381de0fd8af956cb4a4.jpg",
+    "static/media/vegetarian.png": "/static/media/vegetarian.a18a2f70f457824c6460.png",
+    "static/media/logo.png": "/static/media/logo.03bfff0726d4b69c28a3.png",
+    "static/media/cardio.jpg": "/static/media/cardio.55ef25f59ea41f8fa899.jpg",
+    "static/media/paleo.jpg": "/static/media/paleo.be32e39fed3310391e7a.jpg",
+    "static/media/Whole30.jpg": "/static/media/Whole30.964dd670ba190f1a74e5.jpg",
+    "static/media/protein.jpg": "/static/media/protein.650294275f5edb44b174.jpg",
+    "static/media/loss.jpg": "/static/media/loss.5db1d722f01781cefb17.jpg",
+    "static/media/keto.jpg": "/static/media/keto.2aa2d27c3d81194c54d1.jpg",
+    "static/media/dance.jpg": "/static/media/dance.2d29e4092c13e021f3a1.jpg",
+    "static/media/Mediterranean.jpg": "/static/media/Mediterranean.57930558715b9733c948.jpg",
+    "static/media/fit.jpg": "/static/media/fit.7182212c3ea9979b8cfd.jpg",
+    "static/media/cleanLean.jpg": "/static/media/cleanLean.2d91037d0070a2dc8d59.jpg",
+    "static/media/cycling.jpg": "/static/media/cycling.3ea2e4d58caed54c0438.jpg",
+    "static/media/strength.jpg": "/static/media/strength.7f779b87a86d8e92f2c8.jpg",
+    "index.html": "/index.html",
+    "main.5c743eac.css.map": "/static/css/main.5c743eac.css.map",
+    "main.15895a9b.js.map": "/static/js/main.15895a9b.js.map",
+    "787.5c7235f6.chunk.js.map": "/static/js/787.5c7235f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c743eac.css",
+    "static/js/main.15895a9b.js"
+  ]
+}
