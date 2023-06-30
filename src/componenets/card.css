@@ -84,7 +84,10 @@
   }
   
   .card-price {
-    color: #888;
+    color: #ffffff;
+    background-color: #c14c4c;
+    border-radius: 10px;
+    padding: 5%;
   }
   .card-container {
     display: flex;
