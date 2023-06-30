@@ -91,7 +91,7 @@ const TrainingPage = () => {
 
   return (
     <div>
-      <h1 className="nutrition-title">Training Page</h1>
+      <h1 className="nutrition-title">Training Help</h1>
       <div className="training-container">
         <div className="training-splits">
           <div className="card5">

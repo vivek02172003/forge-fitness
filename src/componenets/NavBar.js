@@ -9,7 +9,7 @@ function NavBar() {
     return (
       <nav>
         <div className="logo">
-          <Link to="./HomePage.js"><img src={logo} alt="Logo" className="logo-image" /></Link>
+          <Link to="home"><img src={logo} alt="Logo" className="logo-image" /></Link>
           
         </div>
         <ul className="nav-links">
