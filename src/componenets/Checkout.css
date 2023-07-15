@@ -1,12 +1,13 @@
-.background-image {
+.background-image-checkout {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./Images/backround.jpg');
+  background: linear-gradient( #e66465, #ffc6c6);
   background-size: cover;
   z-index: -1;
+  color: white;
 }
 .checkout-page {
     max-width: 600px;
@@ -26,7 +27,9 @@
   
   label {
     margin-bottom: 0.5rem;
+    font-weight: bold;
   }
+  
   
   input,
   select {
@@ -34,7 +37,7 @@
     margin-bottom: 1rem;
   }
   
-  button {
+  .button {
     background-color: #c14c4c;
     color: #fff;
     padding: 0.5rem 1rem;
@@ -43,7 +46,7 @@
     font-size: 1rem;
   }
   
-  button:hover {
+  .button:hover {
     background-color: #a63d3d;
   }
   
@@ -76,6 +79,17 @@
     background-color: #c9c9c9;
     color: #000000;
   }
+
+  .membership-button:hover {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #bd6e6e;
+    color: #ffffff;
+  }
+  
   
   .membership-button.selected {
     /* Styles for the selected membership button */
@@ -101,6 +115,7 @@
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+    color: #bd6e6e;
   }
   
   .home-link {
@@ -120,3 +135,23 @@
   .popupbuttonbutton:hover {
     background-color: #201010;
   }
+
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+  }
+  
+  .summary-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .summary-item.no-border {
+    border-bottom: none;
+  }
+  

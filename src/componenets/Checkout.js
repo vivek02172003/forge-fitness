@@ -105,7 +105,7 @@ const CheckoutPage = () => {
       // Show the popup
       setPopupVisible(true);
     } else {
-      setError('Please fill in all the required fields.');
+      setError('Please select a membership');
     }
   };
 
@@ -142,25 +142,28 @@ const CheckoutPage = () => {
   };
 
   return (
-    <div>
+    <div className='background-image-checkout'>
       <h1>Checkout</h1>
       <form onSubmit={handleSubmit}>
         <div className="container">
           <div className="item">
             <div className="membership-container">
               <h2 className="membership-title">Select Membership:</h2>
+              <br></br>
               <button
                 className={`membership-button ${membership === 'basic' ? 'selected' : ''}`}
                 onClick={() => handleMembershipChange('basic')}
               >
                 Basic
               </button>
+              <br></br>
               <button
                 className={`membership-button ${membership === 'premium' ? 'selected' : ''}`}
                 onClick={() => handleMembershipChange('premium')}
               >
                 Premium
               </button>
+              <br></br>
               <button
                 className={`membership-button ${membership === 'vip' ? 'selected' : ''}`}
                 onClick={() => handleMembershipChange('vip')}
@@ -174,23 +177,23 @@ const CheckoutPage = () => {
             <div>
               <h2>Your personal information</h2>
             </div>
+            <label htmlFor="name">Name:</label>
             <div>
-              <label htmlFor="name">Name:</label>
               <input type="text" id="name" value={name} onChange={handleNameChange} required minLength={2} maxLength={50} />
             </div>
+            <label htmlFor="email">Email:</label>
             <div>
-              <label htmlFor="email">Email:</label>
               <input type="email" id="email" value={email} onChange={handleEmailChange} required />
             </div>
+            <label htmlFor="phoneNumber">Phone Number:</label>
             <div>
-              <label htmlFor="phoneNumber">Phone Number:</label>
               <input type="tel" id="phoneNumber" value={phoneNumber} onChange={handlePhoneChange} required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" />
             </div>
           </div>
           <div className="item">
             <h2>Your Payment information</h2>
+            <label htmlFor="cardNumber">Card Number:</label>
             <div>
-              <label htmlFor="cardNumber">Card Number:</label>
               <input
                 type="text"
                 id="cardNumber"
@@ -201,31 +204,31 @@ const CheckoutPage = () => {
                 title="Please enter a valid 16-digit card number"
               />
             </div>
+            <label htmlFor="expiry">Expiry:</label>
             <div>
-              <label htmlFor="expiry">Expiry:</label>
               <input type="text" id="expiry" value={expiry} onChange={handleExpiryChange} required pattern="\d{2}/\d{2}" title="Please enter a valid expiry date in MM/YY format" />
             </div>
+            <label htmlFor="cvv">CVV:</label>
             <div>
-              <label htmlFor="cvv">CVV:</label>
               <input type="text" id="cvv" value={cvv} onChange={handleCVVChange} required pattern="[0-9]{3}" title="Please enter a valid 3-digit CVV" />
             </div>
           </div>
           <div className="item">
             <h2>Your address information</h2>
+            <label htmlFor="address">Address:</label>
             <div>
-              <label htmlFor="address">Address:</label>
               <input type="text" id="address" value={address} onChange={handleAddressChange} required />
             </div>
+            <label htmlFor="city">City:</label>
             <div>
-              <label htmlFor="city">City:</label>
               <input type="text" id="city" value={city} onChange={handleCityChange} required />
             </div>
+            <label htmlFor="state">State:</label>
             <div>
-              <label htmlFor="state">State:</label>
               <input type="text" id="state" value={state} onChange={handleStateChange} required />
             </div>
+            <label htmlFor="zipcode">Zipcode:</label>
             <div>
-              <label htmlFor="zipcode">Zipcode:</label>
               <input
                 type="text"
                 id="zipcode"
@@ -241,25 +244,33 @@ const CheckoutPage = () => {
             <div className="summary-box">
               <h2 className="summary-title">Summary</h2>
               <div className="summary-item">
-                <span className="summary-label">Membership Price:</span>
+                <span className="summary-label">Membership Price: </span>
                 <span className="summary-value">${getPrice()}</span>
+                <br></br>
+                <br></br>
+                <br></br>
               </div>
-              <div className="summary-item">
-                <span className="summary-label">Subtotal:</span>
+              <div className="summary-item no-border">
+                <span className="summary-label">Subtotal:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="summary-value">${calculateSubtotal()}</span>
               </div>
               <div className="summary-item">
-                <span className="summary-label">HST (13%):</span>
+                <span className="summary-label">HST (13%):</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="summary-value">${calculateHST().toFixed(2)}</span>
+                <br></br>
+
               </div>
               <div className="summary-item">
-                <span className="summary-label">Total:</span>
+                <span className="summary-label">Total:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="summary-value">${calculateTotal().toFixed(2)}</span>
+                <br></br>
+                <br></br>
+                <br></br>
               </div>
             </div>
           </div>
         </div>
-        <button type="submit">Checkout</button>
+        <button className="button"type="submit">Checkout</button>
       </form>
       {isPopupVisible && (
         <div className="popup-overlay">

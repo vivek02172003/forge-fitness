@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import './calendar.css'; 
+import './calendar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 const FitnessCalendar = () => {
   const [selectedDateTime, setSelectedDateTime] = useState(null);
   const [selectedWorkout, setSelectedWorkout] = useState('');
   const [scheduledEvents, setScheduledEvents] = useState([]);
   const [showInfoBox, setShowInfoBox] = useState(false);
+  const [validationError, setValidationError] = useState('');
 
   useEffect(() => {
     const storedEvents = localStorage.getItem('scheduledEvents');
@@ -22,12 +25,22 @@ const FitnessCalendar = () => {
 
   const handleDateTimeChange = (date) => {
     if (date instanceof Date && !isNaN(date)) {
-      setSelectedDateTime(date);
+      if (selectedDateTime) {
+        const time = selectedDateTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const newDateTime = new Date(date);
+        const [hours, minutes] = time.split(':');
+        newDateTime.setHours(parseInt(hours, 10));
+        newDateTime.setMinutes(parseInt(minutes, 10));
+        setSelectedDateTime(newDateTime);
+      } else {
+        setSelectedDateTime(date);
+      }
       setShowInfoBox(true);
     } else {
       setSelectedDateTime(null);
     }
   };
+  
 
   const handleTimeChange = (event) => {
     const selectedTime = event.target.value;
@@ -36,37 +49,54 @@ const FitnessCalendar = () => {
       const newDateTime = new Date(selectedDateTime);
       newDateTime.setHours(parseInt(hours, 10));
       newDateTime.setMinutes(parseInt(minutes, 10));
+  
+      if (newDateTime < selectedDateTime) {
+        setValidationError('Please select a time after the selected date.');
+        return;
+      }
+  
       setSelectedDateTime(newDateTime);
     }
+    setValidationError('');
   };
+  
 
   const handleWorkoutChange = (event) => {
     setSelectedWorkout(event.target.value);
   };
 
   const scheduleEvent = () => {
-    if (selectedDateTime && selectedWorkout) {
-      const newEvent = {
-        dateTime: selectedDateTime,
-        workout: selectedWorkout,
-      };
-      setScheduledEvents([...scheduledEvents, newEvent]);
-      setSelectedDateTime(null);
-      setSelectedWorkout('');
-      setShowInfoBox(false);
+    if (!selectedDateTime) {
+      setValidationError('Please select a date and time.');
+      return;
     }
+
+    if (!selectedWorkout) {
+      setValidationError('Please enter a workout.');
+      return;
+    }
+
+    const newEvent = {
+      dateTime: selectedDateTime,
+      workout: selectedWorkout,
+    };
+    setScheduledEvents([...scheduledEvents, newEvent]);
+    setSelectedDateTime(null);
+    setSelectedWorkout('');
+    setShowInfoBox(false);
+    setValidationError('');
   };
 
   const closeInfoBox = () => {
     setSelectedDateTime(null);
     setSelectedWorkout('');
     setShowInfoBox(false);
+    setValidationError('');
   };
 
   const renderTileContent = ({ date }) => {
     const eventsForDate = scheduledEvents.filter(
-      (event) =>
-        event.dateTime.toDateString() === date.toDateString()
+      (event) => event.dateTime.toDateString() === date.toDateString()
     );
 
     return (
@@ -80,13 +110,13 @@ const FitnessCalendar = () => {
       </div>
     );
   };
+
   const customTileClassName = ({ date, view }) => {
     if (view === 'month') {
       return 'custom-tile';
     }
     return null;
   };
-
 
   const generateTimeOptions = () => {
     const options = [];
@@ -117,57 +147,81 @@ const FitnessCalendar = () => {
   };
 
   return (
-    
-      <div className="container">
-      <div className="item" style={{backgroundColor: '#e66465'}}>
-        <h1 style={{color: 'white'}}>Select a Date</h1>
-        <div className="calendar-container">
-        <Calendar
-          value={selectedDateTime}
-          onChange={handleDateTimeChange}
-          minDetail="month"
-          tileContent={renderTileContent}
-          tileClassName={customTileClassName}
-        />
-      </div>
-      </div>
-      <div className="item">
-      <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-      <div className="form-container">
-        <div className="form-row">
-          <label>Time:</label>
-          <select
-            value={selectedDateTime ? selectedDateTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : ''}
-            onChange={handleTimeChange}
-          >
-            <option value="">Select a time</option>
-            {generateTimeOptions()}
-          </select>
+    <div className="container">
+      <div className="item" style={{ backgroundColor: '#e66465' }}>
+        <div className="tooltip">
+          <span className="tooltiptext">
+            <FontAwesomeIcon icon={faInfoCircle} />
+            Select a date
+          </span>
+          <h1>
+            Calendar <FontAwesomeIcon icon={faInfoCircle} />
+          </h1>
         </div>
-        <div className="form-row">
-          <label>Workout:</label>
-          <input
-            type="text"
-            value={selectedWorkout}
-            onChange={handleWorkoutChange}
+        <div className="calendar-container">
+          <Calendar
+            value={selectedDateTime}
+            onChange={handleDateTimeChange}
+            minDetail="month"
+            tileContent={renderTileContent}
+            tileClassName={customTileClassName}
           />
         </div>
-        <div className="button-container">
-          <button onClick={scheduleEvent}>Schedule</button>
+      </div>
+      <div className="item">
+        <br />
+        <br />
+        <br />
+        <br />
+        <div className="form-container">
+          <h2>Schedule a Workout </h2>
+          <div className="form-row">
+            <label>Time:</label>
+            <select
+              value={
+                selectedDateTime
+                  ? selectedDateTime.toLocaleTimeString([], {
+                      hour: '2-digit',
+                      minute: '2-digit',
+                    })
+                  : ''
+              }
+              onChange={handleTimeChange}
+            >
+              <option value="">Select a time</option>
+              {generateTimeOptions()}
+            </select>
+          </div>
+          <div className="form-row">
+            <label>Workout:</label>
+            <input
+              type="text"
+              value={selectedWorkout}
+              onChange={handleWorkoutChange}
+            />
+          </div>
+          <div className="button-container">
+            <button className="sbutton" onClick={scheduleEvent}>Schedule</button>
+          </div>
+          {validationError && <p className="error-message">{validationError}</p>}
         </div>
       </div>
       {showInfoBox && (
         <div className="info-box">
-          <h2 style={{margin: 0}}>Information</h2>
-          <p style={{margin: 0}}>Date and Time: {selectedDateTime && selectedDateTime.toLocaleString()}</p>
-          <p style={{margin: 0}}>Workout: {selectedWorkout}</p>
-          <button onClick={closeInfoBox}>Close</button>
+          <h2 style={{ margin: 0 }}>Workout Information</h2>
+          <br></br>
+          <br></br>
+          <p style={{ margin: 0 }}>
+            <strong>Date and Time:</strong> {selectedDateTime && selectedDateTime.toLocaleString()}
+          </p>
+          <br></br>
+          <br></br>
+          <strong><p style={{ margin: 0 }}>Workout: {selectedWorkout}</p></strong>
+          <br></br>
+          <br></br>
+          <button className="sbutton" onClick={closeInfoBox}>Close</button>
         </div>
       )}
-      </div>
     </div>
   );
 };

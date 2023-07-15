@@ -9,7 +9,7 @@ const FitnessPlannerPage = () => {
 
   return (
     <div>
-      <div className="background-image"></div>
+      <div className="background-image-planner"></div>
       <div className="title">
         <h1>FITNESS PLANNER</h1>
       </div>
