@@ -5,6 +5,7 @@ import Membership from './componenets/Membership';
 import NutritionPage from './componenets/NutritionPage';
 import TrainingHelpPage from './componenets/TrainingHelp';
 import FitnessPlannerPage from './componenets/FitnessPlannerPage';
+import Checkout from './componenets/Checkout';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/nutrition" element={<NutritionPage />} />
         <Route path="/train" element={<TrainingHelpPage />} />
         <Route path="/fitness" element={<FitnessPlannerPage />} />
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="/" element={<HomePage />} />
       </Routes>
     </Router>

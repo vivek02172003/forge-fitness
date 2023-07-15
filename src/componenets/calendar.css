@@ -1,0 +1,101 @@
+
+      
+  .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-row label {
+    margin-right: 0.5rem;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px; /* Set the desired width */
+    background-color: #e66465;
+    color: white;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin-right: 200px;
+  }
+
+  .info-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px; /* Set the desired width */
+    background-color: #e66465;
+    color: white;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+  
+  .info-box {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .event-marker {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-marker > div {
+    margin-bottom: 0.5rem;
+  }
+  
+  .selected-date-marker {
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    border-radius: 50%;
+    margin-top: 2px;
+  }
+  
+  .scheduled-event-marker {
+    width: 10px;
+    height: 10px;
+    background-color: #00f;
+    border-radius: 50%;
+    margin-top: 2px;
+  }
+
+  .container {
+    display: flex;
+    flex-grow: 1;
+    justify-content:space-evenly;
+  }
+
+  .space{
+    padding-left: 10px;
+    margin: 10px;
+  }
+
+  .item {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+
+  .calendar-container {
+    margin: 0 auto; /* To center align the calendar container horizontally */
+  }

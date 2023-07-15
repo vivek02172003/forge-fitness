@@ -1,5 +1,18 @@
+
+.background-image-train {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(2, 2, 2, 0.4)), url('./Images/backround.jpg');
+  background-size: cover;
+  z-index: -1;
+}
+
 .filtered-videos {
   flex: 0 0 60%;
+  color: white;
 }
 .card4 {
   display: flex;
@@ -22,10 +35,11 @@
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  background:#e66465;
+  background-color:rgba(169, 169, 169, 0.8);
   color: white;
   width: 350px; /* Set the desired width */
-  height:fit-content; /* Set the desired height */
+  height:auto; /* Set the desired height */
+  margin-top: 30px;
 }
 .card-image::before {
   content: '';
@@ -60,8 +74,8 @@
 }
 
 .filtered-videos{
-  margin-right: 2%;
-  margin-left: 4%;
+  margin-right: 10%;
+  margin-left: 2%;
 }
 
 .card5-title {
@@ -79,7 +93,6 @@
   font-size: 1.5rem;
   margin-bottom: 10px;
   background-color: #c14c4c;
-  width: 100%;
   border-radius: 10px;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -87,4 +100,69 @@
   text-align: center;
   justify-content: center;
   margin-top: 2%;
+}
+
+.training-search {
+    flex: 0 0 10%;
+    background-color:rgba(169, 169, 169, 0.8);
+    padding-bottom: 1%;
+    border-radius:4%;
+    color: white;
+    margin-top: 30px;
+  }
+  .search-option{
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .search-option label {
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+    user-select: none;
+    font-size: larger;
+  }
+
+ .collapsible {
+  background-color: #c14c4c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  
+}
+
+.collapsible::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  border: 10px;
+}
+
+.collapsible.collapsed::after {
+  content: "\f077"; 
+  border: 10px;
+}
+
+.match-title {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  background-color: #c14c4c;
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  padding: 0.01%;
+  padding-left: 10px;
 }

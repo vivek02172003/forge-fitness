@@ -37,7 +37,7 @@ const NutritionSearch = ({ dietPlans, onSearch }) => {
     <div className="nutrition-search">
       <div>
         <h2 class="search-title" style={{ marginTop: 30 }}>Fitness Goal</h2>
-        <div>
+        <div class="search-option">
           <label>
             <input
               type="checkbox"
@@ -48,7 +48,7 @@ const NutritionSearch = ({ dietPlans, onSearch }) => {
             Weight Loss
           </label>
         </div>
-        <div style={{ paddingBottom: 20 }}>
+        <div class="search-option" style={{ paddingBottom: 20 }}>
           <label>
             <input
               type="checkbox"
@@ -62,7 +62,7 @@ const NutritionSearch = ({ dietPlans, onSearch }) => {
       </div>
       <div>
         <h2 class="search-title">Dietary Restriction</h2>
-        <div>
+        <div class="search-option">
         <label>
             <input
             type="checkbox"
@@ -73,7 +73,7 @@ const NutritionSearch = ({ dietPlans, onSearch }) => {
             Vegan
         </label>
         </div>
-        <div>
+        <div class="search-option">
         <label>
             <input
             type="checkbox"
@@ -84,7 +84,7 @@ const NutritionSearch = ({ dietPlans, onSearch }) => {
             Vegetarian
         </label>
         </div>
-        <div>
+        <div class="search-option">
         <label>
             <input
             type="checkbox"
@@ -95,7 +95,7 @@ const NutritionSearch = ({ dietPlans, onSearch }) => {
             Omnivore
         </label>
         </div>
-        <div>
+        <div class="search-option">
         <label>
             <input
             type="checkbox"
@@ -106,7 +106,7 @@ const NutritionSearch = ({ dietPlans, onSearch }) => {
             Whole30
         </label>
         </div>
-        <div>
+        <div class="search-option">
         <label>
             <input
             type="checkbox"
@@ -117,7 +117,7 @@ const NutritionSearch = ({ dietPlans, onSearch }) => {
             Paleo
         </label>
         </div>
-        <div>
+        <div class="search-option">
         <label>
             <input
             type="checkbox"
@@ -128,7 +128,7 @@ const NutritionSearch = ({ dietPlans, onSearch }) => {
             Flexitarian
         </label>
         </div>
-        <div style={{ paddingBottom: 20 }}>
+        <div class="search-option" style={{ paddingBottom: 20 }}>
         <label>
             <input
             type="checkbox"

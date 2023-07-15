@@ -12,7 +12,7 @@ function Membership() {
     const vip = ["Includes all Premium Membership amenities", "Exclusive access to VIP lounge area", "Priority access to all group fitness classes", "Complimentary access to premium amenities like spa facilities", "Complimentary personalized training plan", "Access to VIP-only events and workshops", "Reserved parking spots"]
     return (
         <div className="classes-page">
-          <div className="background-image"></div>
+          <div className="background-image-membership"></div>
           <div className="content" style={{marginRight:'5%', marginLeft:'5%'}}>
           <h1 className="classes-title">Choose Your Membership</h1>
           <div className="container">
@@ -21,7 +21,7 @@ function Membership() {
               title="Basic"
               price="$30/Month"
               description={basicDescription}
-              buttonText="Learn More"
+              buttonText="Sign Up Today!"
             />
           </div>
           <div className="section"style={{width: "350px"}}>
@@ -29,7 +29,7 @@ function Membership() {
               title="Premium"
               price="$40/Month"
               description={premium}
-              buttonText="Learn More"
+              buttonText="Sign Up Today!"
             />
           </div>
           <div className="section">
@@ -37,7 +37,7 @@ function Membership() {
               title="VIP"
               price="$50/Month"
               description={vip}
-              buttonText="Learn More"
+              buttonText="Sign Up Today!"
             />
           </div>
         </div>

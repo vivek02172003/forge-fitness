@@ -1,9 +1,10 @@
 import React from 'react';
+import './TrainingHelp.css'
 
 const TrainingSearch = ({ muscleGroups, onChange, selectedMuscleGroups }) => {
   return (
     <div className="training-search">
-      <h2 class="search-title" style={{paddingRight:10}}>Select Muscle Groups</h2>
+      <h2 class="search-title">Select Muscle Groups</h2>
       {muscleGroups.map((group) => (
         <div key={group}>
           <label>

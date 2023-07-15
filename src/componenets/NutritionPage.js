@@ -103,7 +103,8 @@ const NutritionPage = () => {
   };
 
   return (
-    <div>
+    <div className="nutrition-colour">
+      <div className="background-image-nutrition"></div>
       <h1 className="nutrition-title">Nutrition</h1>
       <div className="nutrition-container">
         <div className="search-container">
