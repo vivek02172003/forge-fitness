@@ -4,6 +4,7 @@ import 'react-calendar/dist/Calendar.css';
 import './calendar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { initReactI18next, useTranslation } from 'react-i18next';
 
 const FitnessCalendar = () => {
   const [selectedDateTime, setSelectedDateTime] = useState(null);
@@ -145,17 +146,17 @@ const FitnessCalendar = () => {
 
     return options;
   };
-
+  const { t } = useTranslation();
   return (
     <div className="container">
       <div className="item" style={{ backgroundColor: '#e66465'}}>
         <div className="tooltip">
           <span className="tooltiptext">
             <FontAwesomeIcon icon={faInfoCircle} />
-            Select a date
+            {t("selectADate ")}
           </span>
           <h1>
-            Calendar <FontAwesomeIcon icon={faInfoCircle} />
+          {t("calendar")} <FontAwesomeIcon icon={faInfoCircle} />
           </h1>
         </div>
         <div className="calendar-container">
@@ -174,9 +175,9 @@ const FitnessCalendar = () => {
         <br />
         <br />
         <div className="form-container">
-          <h2>Schedule a Workout </h2>
+          <h2>{t("scheduleWorkout")}</h2>
           <div className="form-row">
-            <label>Time:</label>
+            <label>{t("time")}</label>
             <select
               value={
                 selectedDateTime
@@ -188,12 +189,12 @@ const FitnessCalendar = () => {
               }
               onChange={handleTimeChange}
             >
-              <option value="">Select a time</option>
+              <option value="">{t("selectTime")}</option>
               {generateTimeOptions()}
             </select>
           </div>
           <div className="form-row">
-            <label>Workout:</label>
+            <label>{t("workout")}:</label>
             <input
               type="text"
               value={selectedWorkout}
@@ -201,25 +202,25 @@ const FitnessCalendar = () => {
             />
           </div>
           <div className="button-container">
-            <button className="sbutton" onClick={scheduleEvent}>Schedule</button>
+            <button className="sbutton" onClick={scheduleEvent}>{t("schedule")}:</button>
           </div>
           {validationError && <p className="error-message">{validationError}</p>}
         </div>
       </div>
       {showInfoBox && (
         <div className="info-box">
-          <h2 style={{ margin: 0 }}>Workout Information</h2>
+          <h2 style={{ margin: 0 }}>{t("workOutInfo")}</h2>
           <br></br>
           <br></br>
           <p style={{ margin: 0 }}>
-            <strong>Date and Time:</strong> {selectedDateTime && selectedDateTime.toLocaleString()}
+            <strong>{t("dateAndTime")}</strong> {selectedDateTime && selectedDateTime.toLocaleString()}
           </p>
           <br></br>
           <br></br>
-          <strong><p style={{ margin: 0 }}>Workout: {selectedWorkout}</p></strong>
+          <strong><p style={{ margin: 0 }}>{t("workout")}: {selectedWorkout}</p></strong>
           <br></br>
           <br></br>
-          <button className="sbutton" onClick={closeInfoBox}>Close</button>
+          <button className="sbutton" onClick={closeInfoBox}>{t("close")}</button>
         </div>
       )}
     </div>

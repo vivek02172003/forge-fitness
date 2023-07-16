@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import './Membership.css';  
+import './Membership.css';
 import Card from './card2';
 import cardio from './Images/cardio.jpg';
 import strength from './Images/strength.jpg';
@@ -12,10 +12,12 @@ function Membership() {
   const { t } = useTranslation();
 
   return (
-    <div className="classes-page">
+    <div className="classes-page" role="main" aria-label="Membership Page">
       <div className="background-image-membership"></div>
       <div className="content" style={{ marginRight: '5%', marginLeft: '5%' }}>
-        <h1 className="classes-title">{t("chooseMembership")}</h1>
+        <h1 className="classes-title" tabIndex="0">
+          {t("chooseMembership")}
+        </h1>
         <div className="container">
           <div className="section">
             <Card

@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Checkout.css';
+import { useTranslation } from 'react-i18next';
 
 const CheckoutPage = () => {
+  const { t } = useTranslation();
+
   const [membership, setMembership] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -105,7 +108,7 @@ const CheckoutPage = () => {
       // Show the popup
       setPopupVisible(true);
     } else {
-      setError('Please select a membership');
+      setError(t("checkoutError"));
     }
   };
 
@@ -143,56 +146,56 @@ const CheckoutPage = () => {
 
   return (
     <div className='background-image-checkout'>
-      <h1>Checkout</h1>
+      <h1>{t("checkoutTitle")}</h1>
       <form onSubmit={handleSubmit}>
         <div className="container">
           <div className="item">
             <div className="membership-container">
-              <h2 className="membership-title">Select Membership:</h2>
+              <h2 className="membership-title">{t("checkoutMembershipTitle")}</h2>
               <br></br>
               <button
                 className={`membership-button ${membership === 'basic' ? 'selected' : ''}`}
                 onClick={() => handleMembershipChange('basic')}
               >
-                Basic
+                {t("membershipBasic")}
               </button>
               <br></br>
               <button
                 className={`membership-button ${membership === 'premium' ? 'selected' : ''}`}
                 onClick={() => handleMembershipChange('premium')}
               >
-                Premium
+                {t("membershipPremium")}
               </button>
               <br></br>
               <button
                 className={`membership-button ${membership === 'vip' ? 'selected' : ''}`}
                 onClick={() => handleMembershipChange('vip')}
               >
-                VIP
+                {t("membershipVIP")}
               </button>
               {error && <p className="error-message">{error}</p>}
             </div>
           </div>
           <div className="item">
             <div>
-              <h2>Your personal information</h2>
+              <h2>{t("checkoutPersonalInfoTitle")}</h2>
             </div>
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name">{t("checkoutNameLabel")}:</label>
             <div>
               <input type="text" id="name" value={name} onChange={handleNameChange} required minLength={2} maxLength={50} />
             </div>
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">{t("checkoutEmailLabel")}:</label>
             <div>
               <input type="email" id="email" value={email} onChange={handleEmailChange} required />
             </div>
-            <label htmlFor="phoneNumber">Phone Number:</label>
+            <label htmlFor="phoneNumber">{t("checkoutPhoneLabel")}:</label>
             <div>
-              <input type="tel" id="phoneNumber" value={phoneNumber} onChange={handlePhoneChange} required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" />
+              <input type="tel" id="phoneNumber" value={phoneNumber} onChange={handlePhoneChange} required pattern="[0-9]{10}" title={t("checkoutPhoneValidation")} />
             </div>
           </div>
           <div className="item">
-            <h2>Your Payment information</h2>
-            <label htmlFor="cardNumber">Card Number:</label>
+            <h2>{t("checkoutPaymentInfoTitle")}</h2>
+            <label htmlFor="cardNumber">{t("checkoutCardNumberLabel")}:</label>
             <div>
               <input
                 type="text"
@@ -201,33 +204,33 @@ const CheckoutPage = () => {
                 onChange={handleCardNumberChange}
                 required
                 pattern="[0-9]{16}"
-                title="Please enter a valid 16-digit card number"
+                title={t("checkoutCardNumberValidation")}
               />
             </div>
-            <label htmlFor="expiry">Expiry:</label>
+            <label htmlFor="expiry">{t("checkoutExpiryLabel")}:</label>
             <div>
-              <input type="text" id="expiry" value={expiry} onChange={handleExpiryChange} required pattern="\d{2}/\d{2}" title="Please enter a valid expiry date in MM/YY format" />
+              <input type="text" id="expiry" value={expiry} onChange={handleExpiryChange} required pattern="\d{2}/\d{2}" title={t("checkoutExpiryValidation")} />
             </div>
-            <label htmlFor="cvv">CVV:</label>
+            <label htmlFor="cvv">{t("checkoutCVVLabel")}:</label>
             <div>
-              <input type="text" id="cvv" value={cvv} onChange={handleCVVChange} required pattern="[0-9]{3}" title="Please enter a valid 3-digit CVV" />
+              <input type="text" id="cvv" value={cvv} onChange={handleCVVChange} required pattern="[0-9]{3}" title={t("checkoutCVVValidation")} />
             </div>
           </div>
           <div className="item">
-            <h2>Your address information</h2>
-            <label htmlFor="address">Address:</label>
+            <h2>{t("checkoutAddressInfoTitle")}</h2>
+            <label htmlFor="address">{t("checkoutAddressLabel")}:</label>
             <div>
               <input type="text" id="address" value={address} onChange={handleAddressChange} required />
             </div>
-            <label htmlFor="city">City:</label>
+            <label htmlFor="city">{t("checkoutCityLabel")}:</label>
             <div>
               <input type="text" id="city" value={city} onChange={handleCityChange} required />
             </div>
-            <label htmlFor="state">State:</label>
+            <label htmlFor="state">{t("checkoutStateLabel")}:</label>
             <div>
               <input type="text" id="state" value={state} onChange={handleStateChange} required />
             </div>
-            <label htmlFor="zipcode">Zipcode:</label>
+            <label htmlFor="zipcode">{t("checkoutZipcodeLabel")}:</label>
             <div>
               <input
                 type="text"
@@ -236,32 +239,32 @@ const CheckoutPage = () => {
                 onChange={handleZipcodeChange}
                 required
                 pattern="^[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d$"
-                title="Please enter a valid ZIP code EX: A1B 2C3"
+                title={t("checkoutZipcodeValidation")}
               />
             </div>
           </div>
           <div className="item">
             <div className="summary-box">
-              <h2 className="summary-title">Summary</h2>
+              <h2 className="summary-title">{t("checkoutSummaryTitle")}</h2>
               <div className="summary-item">
-                <span className="summary-label">Membership Price: </span>
+                <span className="summary-label">{t("checkoutMembershipPriceLabel")}: </span>
                 <span className="summary-value">${getPrice()}</span>
                 <br></br>
                 <br></br>
                 <br></br>
               </div>
               <div className="summary-item no-border">
-                <span className="summary-label">Subtotal:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span className="summary-label">{t("checkoutSubtotalLabel")}:</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="summary-value">${calculateSubtotal()}</span>
               </div>
               <div className="summary-item">
-                <span className="summary-label">HST (13%):</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span className="summary-label">{t("checkoutHSTLabel")}:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="summary-value">${calculateHST().toFixed(2)}</span>
                 <br></br>
 
               </div>
               <div className="summary-item">
-                <span className="summary-label">Total:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span className="summary-label">{t("checkoutTotalLabel")}:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="summary-value">${calculateTotal().toFixed(2)}</span>
                 <br></br>
                 <br></br>
@@ -270,14 +273,14 @@ const CheckoutPage = () => {
             </div>
           </div>
         </div>
-        <button className="button"type="submit">Checkout</button>
+        <button className="button"type="submit">{t("checkoutButton")}</button>
       </form>
       {isPopupVisible && (
         <div className="popup-overlay">
           <div className="popupcheckout">
-            <h2>Membership Registration Successful!</h2>
-            <p>Thank you for becoming a Member at Forge Fitness!</p>
-            <Link to="/"><button className="popupbutton">Go back to Home</button></Link>
+            <h2>{t("checkoutSuccessTitle")}</h2>
+            <p>{t("checkoutSuccessMessage")}</p>
+            <Link to="/"><button className="popupbutton">{t("checkoutSuccessButton")}</button></Link>
           </div>
         </div>
       )}
