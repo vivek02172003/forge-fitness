@@ -148,7 +148,7 @@ const FitnessCalendar = () => {
 
   return (
     <div className="container">
-      <div className="item" style={{ backgroundColor: '#e66465' }}>
+      <div className="item" style={{ backgroundColor: '#e66465'}}>
         <div className="tooltip">
           <span className="tooltiptext">
             <FontAwesomeIcon icon={faInfoCircle} />

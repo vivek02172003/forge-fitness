@@ -1,11 +1,20 @@
 
-      
+    
+    .react-calendar {
+      width: 550px;
+      max-width: 100%;
+      max-height: 100%;
+      background: white;
+      border: 1px solid #a0a096;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.125em;
+      margin-bottom: 5%;
+  }
   .form-row {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
   }
-  
   .form-row label {
     margin-right: 0.5rem;
   }
@@ -18,12 +27,12 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 200px; /* Set the desired width */
+    width: 300px; /* Set the desired width */
     background-color: #e66465;
     color: white;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
-    margin-right: 20px;
+    padding: 10px;
   }
 
   .info-box{

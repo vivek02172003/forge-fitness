@@ -1,7 +1,9 @@
 import React from 'react';
 import './GoogleFormButton.css';
 
-const GoogleFormButton = () => {
+const GoogleFormButton = ({ selectedLanguage }) => {
+  const buttonText = selectedLanguage === 'fr' ? 'Contacter un formateur' : 'Contact a Trainer';
+
   return (
     <div className="contact-trainer-button">
       <a
@@ -9,7 +11,7 @@ const GoogleFormButton = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Contact a Trainer
+        {buttonText}
       </a>
     </div>
   );

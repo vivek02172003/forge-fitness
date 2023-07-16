@@ -274,7 +274,7 @@ const CheckoutPage = () => {
       </form>
       {isPopupVisible && (
         <div className="popup-overlay">
-          <div className="popup">
+          <div className="popupcheckout">
             <h2>Membership Registration Successful!</h2>
             <p>Thank you for becoming a Member at Forge Fitness!</p>
             <Link to="/"><button className="popupbutton">Go back to Home</button></Link>

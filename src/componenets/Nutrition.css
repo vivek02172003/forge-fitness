@@ -121,3 +121,33 @@
   user-select: none;
   font-size: larger;
 }
+
+.popup {
+  /* existing styles */
+  height: 80vh; /* Set the height of the popup */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: #bd6e6e;
+}
+
+.recipe-container {
+  margin-top: 20px;
+}
+
+.recipe-item {
+  margin-bottom: 20px;
+}
+
+.recipe-item h4,
+.recipe-item h5 {
+  margin-bottom: 10px;
+}
+
+.recipe-item ul,
+.recipe-item ol {
+  padding-left: 20px;
+}
+
