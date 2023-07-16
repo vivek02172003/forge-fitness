@@ -3,11 +3,15 @@ import './NavBar.css';
 import logo from './Images/logo.png';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
 
 function NavBar() {
   const location = useLocation();
   const { t } = useTranslation();
-
+  const onChange = (event) => {
+    i18n.changeLanguage(event.target.value);
+  };
   return (
     <Suspense fallback="loading...">
     <nav>
@@ -41,6 +45,12 @@ function NavBar() {
           <Link to="/fitness">
             <button className="nav-button">{t('navFitnessPlan')}</button>
           </Link>
+        </li>
+        <li>
+        <select name="language" onChange={onChange}>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+          </select>
         </li>
       </ul>
     </nav>

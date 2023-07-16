@@ -24,7 +24,18 @@ const translationEn = {
   navMembership:"Membership",
   navNutrition: "Nutrition",
   navTrainingHelp: "Training Help",
-  navFitnessPlan:"Fitness Plan"
+  navFitnessPlan:"Fitness Plan",
+  chooseMembership: "Choose Your Membership",
+  membershipBasic: "Basic",
+  membershipPremium: "Premium",
+  membershipVIP: "VIP",
+  membershipBasicPrice: "$30/Month",
+  membershipPremiumPrice: "$40/Month",
+  membershipVIPPrice: "$50/Month",
+  membershipBasicDescription: "Full access to the gym facilities. Cardio machines and strength training equipment. Group fitness classes (limited availability). Locker rooms and showers. Personalized fitness assessment. Access to group fitness classes (limited availability). Wi-Fi access throughout the facility.",
+  membershipPremiumDescription: "Includes all Basic Membership amenities. Priority access to group fitness classes. Access to specialized training equipment and areas. Additional fitness amenities such as sauna or steam room. Complimentary towel service. Discounted rates on personal training sessions.",
+  membershipVIPDescription: "Includes all Premium Membership amenities. Exclusive access to VIP lounge area. Priority access to all group fitness classes. Complimentary access to premium amenities like spa facilities. Complimentary personalized training plan. Access to VIP-only events and workshops. Reserved parking spots.",
+  signUpToday: "Sign Up Today!",
 };
 
 const translationFr = {
@@ -43,6 +54,17 @@ const translationFr = {
   navNutrition: "Nutrition",
   navTrainingHelp: "Aide à l'entraînement",
   navFitnessPlan: "Plan de fitness",
+  chooseMembership: "Choisissez votre adhésion",
+  membershipBasic: "Basique",
+  membershipPremium: "Premium",
+  membershipVIP: "VIP",
+  membershipBasicPrice: "30 $/mois",
+  membershipPremiumPrice: "40 $/mois",
+  membershipVIPPrice: "50 $/mois",
+  membershipBasicDescription: "Accès complet aux installations de la salle de sport. Machines de cardio et équipements de musculation. Cours collectifs (places limitées). Vestiaires et douches. Évaluation personnalisée de la condition physique. Accès aux cours collectifs (places limitées). Accès Wi-Fi dans tout le bâtiment.",
+  membershipPremiumDescription: "Inclut tous les avantages de l'adhésion basique. Accès prioritaire aux cours collectifs. Accès aux équipements et zones d'entraînement spécialisés. Autres équipements de remise en forme comme le sauna ou le hammam. Service de serviettes gratuit. Tarifs réduits sur les séances de coaching personnel.",
+  membershipVIPDescription: "Inclut tous les avantages de l'adhésion premium. Accès exclusif à l'espace VIP. Accès prioritaire à tous les cours collectifs. Accès gratuit aux équipements premium comme les installations de spa. Plan d'entraînement personnalisé gratuit. Accès aux événements et ateliers réservés aux VIP. Places de parking réservées.",
+  signUpToday: "Inscrivez-vous dès aujourd'hui !",
 };
 
 i18n.use(initReactI18next).init({
@@ -58,10 +80,6 @@ i18n.use(initReactI18next).init({
 function Classes() {
   const { t } = useTranslation();
 
-  const onChange = (event) => {
-    i18n.changeLanguage(event.target.value);
-  };
-
   const selectedLanguage = i18n.language;
 
   return (
@@ -72,10 +90,6 @@ function Classes() {
           <h1 className="classes-title" tabIndex="0">
             {t("classes")}
           </h1>
-          <select name="language" onChange={onChange}>
-            <option value="en">English</option>
-            <option value="fr">French</option>
-          </select>
           <div className="container">
             <div className="section">
               <Card
