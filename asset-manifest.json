@@ -1,31 +1,39 @@
 {
   "files": {
-    "main.css": "/forge-fitness/static/css/main.e2006e9a.css",
-    "main.js": "/forge-fitness/static/js/main.de1f7cb3.js",
+    "main.css": "/forge-fitness/static/css/main.db444c65.css",
+    "main.js": "/forge-fitness/static/js/main.a2047e07.js",
     "static/js/787.517d6b4f.chunk.js": "/forge-fitness/static/js/787.517d6b4f.chunk.js",
     "static/media/backround.jpg": "/forge-fitness/static/media/backround.6ad214f366340c36aed7.jpg",
     "static/media/musclemaximizer.jpg": "/forge-fitness/static/media/musclemaximizer.8381de0fd8af956cb4a4.jpg",
     "static/media/vegetarian.png": "/forge-fitness/static/media/vegetarian.a18a2f70f457824c6460.png",
     "static/media/logo.png": "/forge-fitness/static/media/logo.03bfff0726d4b69c28a3.png",
+    "static/media/fa-solid-900.ttf": "/forge-fitness/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/cardio.jpg": "/forge-fitness/static/media/cardio.55ef25f59ea41f8fa899.jpg",
     "static/media/paleo.jpg": "/forge-fitness/static/media/paleo.be32e39fed3310391e7a.jpg",
     "static/media/Whole30.jpg": "/forge-fitness/static/media/Whole30.964dd670ba190f1a74e5.jpg",
     "static/media/protein.jpg": "/forge-fitness/static/media/protein.650294275f5edb44b174.jpg",
+    "static/media/fa-brands-400.ttf": "/forge-fitness/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
     "static/media/loss.jpg": "/forge-fitness/static/media/loss.5db1d722f01781cefb17.jpg",
+    "static/media/fa-solid-900.woff2": "/forge-fitness/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
     "static/media/keto.jpg": "/forge-fitness/static/media/keto.2aa2d27c3d81194c54d1.jpg",
     "static/media/dance.jpg": "/forge-fitness/static/media/dance.2d29e4092c13e021f3a1.jpg",
     "static/media/Mediterranean.jpg": "/forge-fitness/static/media/Mediterranean.57930558715b9733c948.jpg",
     "static/media/fit.jpg": "/forge-fitness/static/media/fit.7182212c3ea9979b8cfd.jpg",
+    "static/media/fa-brands-400.woff2": "/forge-fitness/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
     "static/media/cleanLean.jpg": "/forge-fitness/static/media/cleanLean.2d91037d0070a2dc8d59.jpg",
     "static/media/cycling.jpg": "/forge-fitness/static/media/cycling.3ea2e4d58caed54c0438.jpg",
+    "static/media/fa-regular-400.ttf": "/forge-fitness/static/media/fa-regular-400.d87474231f4192884802.ttf",
     "static/media/strength.jpg": "/forge-fitness/static/media/strength.7f779b87a86d8e92f2c8.jpg",
+    "static/media/fa-regular-400.woff2": "/forge-fitness/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/fa-v4compatibility.ttf": "/forge-fitness/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/forge-fitness/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/forge-fitness/index.html",
-    "main.e2006e9a.css.map": "/forge-fitness/static/css/main.e2006e9a.css.map",
-    "main.de1f7cb3.js.map": "/forge-fitness/static/js/main.de1f7cb3.js.map",
+    "main.db444c65.css.map": "/forge-fitness/static/css/main.db444c65.css.map",
+    "main.a2047e07.js.map": "/forge-fitness/static/js/main.a2047e07.js.map",
     "787.517d6b4f.chunk.js.map": "/forge-fitness/static/js/787.517d6b4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2006e9a.css",
-    "static/js/main.de1f7cb3.js"
+    "static/css/main.db444c65.css",
+    "static/js/main.a2047e07.js"
   ]
 }
