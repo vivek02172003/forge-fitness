@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/forge-fitness/static/css/main.db444c65.css",
-    "main.js": "/forge-fitness/static/js/main.a2047e07.js",
+    "main.css": "/forge-fitness/static/css/main.6b6d67d2.css",
+    "main.js": "/forge-fitness/static/js/main.fc14cdc8.js",
     "static/js/787.517d6b4f.chunk.js": "/forge-fitness/static/js/787.517d6b4f.chunk.js",
     "static/media/backround.jpg": "/forge-fitness/static/media/backround.6ad214f366340c36aed7.jpg",
     "static/media/musclemaximizer.jpg": "/forge-fitness/static/media/musclemaximizer.8381de0fd8af956cb4a4.jpg",
@@ -28,12 +28,12 @@
     "static/media/fa-v4compatibility.ttf": "/forge-fitness/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
     "static/media/fa-v4compatibility.woff2": "/forge-fitness/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/forge-fitness/index.html",
-    "main.db444c65.css.map": "/forge-fitness/static/css/main.db444c65.css.map",
-    "main.a2047e07.js.map": "/forge-fitness/static/js/main.a2047e07.js.map",
+    "main.6b6d67d2.css.map": "/forge-fitness/static/css/main.6b6d67d2.css.map",
+    "main.fc14cdc8.js.map": "/forge-fitness/static/js/main.fc14cdc8.js.map",
     "787.517d6b4f.chunk.js.map": "/forge-fitness/static/js/787.517d6b4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db444c65.css",
-    "static/js/main.a2047e07.js"
+    "static/css/main.6b6d67d2.css",
+    "static/js/main.fc14cdc8.js"
   ]
 }
