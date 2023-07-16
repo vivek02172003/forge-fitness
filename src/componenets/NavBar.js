@@ -47,7 +47,7 @@ function NavBar() {
           </Link>
         </li>
         <li>
-        <select name="language" onChange={onChange}>
+        <select className="languageSelect" name="language" onChange={onChange}>
             <option value="en">English</option>
             <option value="fr">French</option>
           </select>

@@ -53,3 +53,14 @@ nav {
 .nav-button:hover {
   background-color: #201010;
 }
+
+.languageSelect{
+  background-color: #c14c4c;
+  border: none;
+  cursor: pointer;
+  color: white;
+  width: 100px; /* Adjust the width of the button */
+  height: 40px; /* Adjust the height of the button */
+  border-radius: 5px;
+  padding-left: 20px;
+}

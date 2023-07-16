@@ -588,7 +588,7 @@ const NutritionPage = () => {
     {
       name: 'Whole30 Reset',
       fitnessGoal: 'weight-loss',
-      dietaryRestriction: 'omnivore',
+      dietaryRestriction: 'whole30',
       image: Whole,
       description: 'A 30-day reset diet plan that focuses on whole, unprocessed foods to eliminate inflammation and improve overall health.',
       recipes: [
