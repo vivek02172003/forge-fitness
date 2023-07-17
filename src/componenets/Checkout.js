@@ -146,10 +146,13 @@ const CheckoutPage = () => {
 
   return (
     <div className='background-image-checkout'>
-      <h1>{t("checkoutTitle")}</h1>
+      <br></br><br></br><br></br><br></br>
+      <div className="checkout-title">
+        <h1>{t("checkoutTitle")}</h1>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="container">
-          <div className="item">
+          <div className="item" style={{marginRight: "90px"}}>
             <div className="membership-container">
               <h2 className="membership-title">{t("checkoutMembershipTitle")}</h2>
               <br></br>

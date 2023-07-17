@@ -15,7 +15,7 @@
     padding: 2rem;
   }
   
-  h1 {
+  .h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -154,4 +154,13 @@
   .summary-item.no-border {
     border-bottom: none;
   }
-  
+  .checkout-title {
+    font-size:1.5rem;
+  color: #ffffff;
+  margin-top: 0;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+}

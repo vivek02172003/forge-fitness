@@ -10,7 +10,7 @@ import i18n from 'i18next';
 import { initReactI18next, useTranslation } from 'react-i18next';
 
 const translationEn = {
-  classes: "CLASSES",
+  classes: "Classes",
   cardio: "Cardio",
   strength: "Strength",
   cycling: "Cycling",
@@ -70,7 +70,7 @@ const translationEn = {
   checkoutSuccessMessage: "Thank you for becoming a Member at Forge Fitness!",
   checkoutSuccessButton: "Go back to Home",
   googleFormButton: "Contact a Trainer",
-  fitnessPlanner: "FITNESS PLANNER",
+  fitnessPlanner: "Fitness Planner",
   selectADate:"Select a Date",
   calendar: "Calendar",
   scheduleWorkout:"Schedule a workout",
@@ -84,7 +84,7 @@ const translationEn = {
 };
 
 const translationFr = {
-  classes: "DES CLASSE",
+  classes: "Des Classes",
   cardio: "Cardio",
   strength: "Force",
   cycling: "Cyclisme",
@@ -144,7 +144,7 @@ const translationFr = {
   checkoutSuccessMessage: "Merci de devenir membre chez Forge Fitness !",
   checkoutSuccessButton: "Retour à l'accueil",
   googleFormButton: "Contacter un Formateur",
-  fitnessPlanner:"PLANIFICATEUR DE MISE EN FORME",
+  fitnessPlanner:"Planificateur de remise en forme",
   selectADate: "Sélectionner une date",
   calendar: "Calendrier",
   scheduleWorkout: "Planifier un entraînement",

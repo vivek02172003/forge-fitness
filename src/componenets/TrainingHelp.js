@@ -109,7 +109,7 @@ const TrainingPage = () => {
 
   return (
     <div className="background-image-train">
-      <h1 className="nutrition-title">Training Help</h1>
+      <h1 className="training-title">Training Help</h1>
       <div className="training-container">
         <div className="training-splits">
           <div className="card5">

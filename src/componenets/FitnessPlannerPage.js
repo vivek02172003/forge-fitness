@@ -11,7 +11,7 @@ const FitnessPlannerPage = () => {
   return (
     <div>
       <div className="background-image-planner"></div>
-      <div className="title">
+      <div className="fitness-title">
         <h1>{t("fitnessPlanner")}</h1>
       </div>
       <FitnessCalendar></FitnessCalendar>

@@ -9,12 +9,13 @@
   z-index: -1;
 }
 
-  .title {
-    color: #fff;
-    font-size: 1.5rem;
-    padding-top: 1.5%;
+  .fitness-title {
+      font-size:1.5rem;
+    color: #ffffff;
     margin-top: 0;
-    margin-bottom: 2%;
+    text-align: center;
+    justify-content: center;
+
   }
 
   .title{
@@ -26,3 +27,8 @@
   .title h1 {
     margin: 0;
   }
+
+  .h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
