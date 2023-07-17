@@ -1008,7 +1008,7 @@ const NutritionPage = () => {
             'Enjoy a keto-friendly and delicious salad!',
           ],
         },
-        // Add more recipes for Keto Fuel diet plan
+        
       ],
     },
     {

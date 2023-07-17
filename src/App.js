@@ -22,7 +22,7 @@ function App() {
         <Route path="/train" element={<TrainingHelpPage />} />
         <Route path="/fitness" element={<FitnessPlannerPage />} />
         <Route path="/checkout" element={<Checkout />} />
-        <Route path="/*" element={<NotFoundPage />} /> {/* Add this line */}
+        <Route path="/*" element={<NotFoundPage />} /> 
       </Routes>
     </Router>
   );

@@ -122,12 +122,12 @@ const FitnessCalendar = () => {
   const generateTimeOptions = () => {
     const options = [];
     const startTime = new Date();
-    startTime.setHours(8, 0, 0); // Set start time to 8:00 AM
+    startTime.setHours(8, 0, 0); 
 
     const endTime = new Date();
-    endTime.setHours(23, 0, 0); // Set end time to 11:00 PM
+    endTime.setHours(23, 0, 0); 
 
-    const timeIncrement = 30; // Set time interval to 30 minutes
+    const timeIncrement = 30; 
 
     let currentTime = new Date(startTime);
 

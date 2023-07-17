@@ -67,7 +67,6 @@ const CheckoutPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Field validation
     const isFormValid =
       membership.trim() !== '' &&
       name.trim() !== '' &&
@@ -88,11 +87,8 @@ const CheckoutPage = () => {
     console.log('isFormValid:', isFormValid);
 
     if (isFormValid) {
-      // Handle form submission logic here
-      // For demonstration purposes, log the form data to the console
       console.log('Form submitted:', { membership, name, email, phoneNumber, cardNumber, expiry, cvv, address, city, state, zipcode });
 
-      // Reset form fields
       setMembership('');
       setName('');
       setEmail('');
@@ -105,7 +101,6 @@ const CheckoutPage = () => {
       setState('');
       setZipcode('');
 
-      // Show the popup
       setPopupVisible(true);
     } else {
       setError(t("checkoutError"));

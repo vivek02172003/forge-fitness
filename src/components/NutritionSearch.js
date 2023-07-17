@@ -140,7 +140,6 @@ const NutritionSearch = ({ dietPlans, onSearch }) => {
         </label>
         </div>
 
-        {/* Add more checkbox options as needed */}
       </div>
       <button class="nutrition-button" onClick={filterDietPlans}>Search</button>
     </div>

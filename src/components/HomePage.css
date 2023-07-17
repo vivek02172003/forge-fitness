@@ -36,8 +36,8 @@
     cursor: pointer;
     color: white;
     font-size: xx-large;
-    width: 420px; /* Adjust the width of the button */
-    height: 100px; /* Adjust the height of the button */
+    width: 420px; 
+    height: 100px; 
     margin-top: 1rem;
     border-radius: 10px;
   }

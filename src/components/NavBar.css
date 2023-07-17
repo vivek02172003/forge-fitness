@@ -2,18 +2,18 @@ nav {
     display: flex;
     align-items: center;
     background: linear-gradient(#ffffff, #e66465);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the shadow properties as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 
   }
   
   .logo {
-    margin-right: 0.5rem; /* Adjust the margin as needed */
+    margin-right: 0.5rem; 
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
   
   .logo-image {
-    height: 80px; /* Adjust the height of the logo image */
+    height: 80px; 
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
@@ -30,7 +30,7 @@ nav {
   }
   
   .nav-links li {
-    margin-right: 1rem; /* Adjust the margin as needed */
+    margin-right: 1rem; 
   }
   
   .nav-links a {
@@ -44,8 +44,8 @@ nav {
   padding: 0.5rem 1rem;
   cursor: pointer;
   color: white;
-  width: 140px; /* Adjust the width of the button */
-  height: 40px; /* Adjust the height of the button */
+  width: 140px; 
+  height: 40px; 
   border-radius: 5px
   
 }
@@ -59,8 +59,8 @@ nav {
   border: none;
   cursor: pointer;
   color: white;
-  width: 100px; /* Adjust the width of the button */
-  height: 40px; /* Adjust the height of the button */
+  width: 100px; 
+  height: 40px; 
   border-radius: 5px;
   padding-left: 20px;
 }
