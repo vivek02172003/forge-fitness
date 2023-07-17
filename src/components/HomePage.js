@@ -11,7 +11,7 @@ function HomePage() {
           <div className="background-image-home"></div>
           <div className="content">
             <h1 className="site-title">Forge Fitness</h1>
-            <Link to="membership"><button className="get-started-button">{t("signUpToday")}</button></Link>
+            <Link to="/membership"><button className="get-started-button">{t("signUpToday")}</button></Link>
           </div>
           <GoogleFormButton />
         </div>

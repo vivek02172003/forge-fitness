@@ -153,7 +153,7 @@ const FitnessCalendar = () => {
         <div className="tooltip">
           <span className="tooltiptext">
             <FontAwesomeIcon icon={faInfoCircle} />
-            {t("selectADate ")}
+            {t("selectADate")}
           </span>
           <h1>
           {t("calendar")} <FontAwesomeIcon icon={faInfoCircle} />
