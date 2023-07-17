@@ -15,7 +15,7 @@ function App() {
     <Router basename="/forge-fitness">
       <Navbar />
       <Routes>
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/membership" element={<Membership />} />
         <Route path="/nutrition" element={<NutritionPage />} />

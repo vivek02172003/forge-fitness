@@ -16,7 +16,7 @@ function NavBar() {
     <Suspense fallback="loading...">
     <nav>
       <div className="logo">
-        <Link to="/home">
+        <Link to="/">
           <img src={logo} alt="Logo" className="logo-image" />
         </Link>
       </div>
